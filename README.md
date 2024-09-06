@@ -83,6 +83,8 @@ You can change the background and text (foreground) colors of the active and ina
 - `spaceBetween`: Defines the space between each tab in the scroll view.
 - `leadingSpace` and `trailingSpace`: Set custom padding before the first tab and after the last tab, respectively.
 
+### Complete Example
+
 ```swift
 import SwiftUI
 import ScrollableTabView
@@ -109,3 +111,36 @@ struct ContentView: View {
 
 
 ```
+
+## Parameters
+
+| Parameter        | Type       | Default               | Description                                                      |
+|------------------|------------|-----------------------|------------------------------------------------------------------|
+| `activeBgColor`  | `Color`    | `Color.accentColor`   | The background color for the active tab.                         |
+| `inactiveBgColor`| `Color`    | `Color.gray`          | The background color for inactive tabs.                          |
+| `activeColor`    | `Color`    | `Color.primary`       | The text/icon color for the active tab.                          |
+| `inActiveColor`  | `Color`    | `Color.secondary`     | The text/icon color for inactive tabs.                           |
+| `cornerRadius`   | `CGFloat`  | `12`                  | The corner radius applied to the tabs.                           |
+| `spaceBetween`   | `CGFloat`  | `12`                  | The space between each tab in the scroll view.                   |
+| `leadingSpace`   | `CGFloat`  | `0`                   | The space before the first tab.                                  |
+| `trailingSpace`  | `CGFloat`  | `0`                   | The space after the last tab.                                    |
+| `items`          | `[TabItem]`| **Required**          | An array of `TabItem` objects representing each tab.             |
+
+## Predefined TabItem Components
+
+`WithText`
+Displays text as the tab title.
+```swift
+WithText(text: "Tab Title", cornerRadius: 12)
+
+```
+`WithTextAndIcon`
+Displays both text and an SF Symbol icon as the tab title.
+
+```swift
+WithTextAndIcon(text: "Tab Title", systemName: "icon.name", cornerRadius: 12)
+
+```
+
+## License
+This package is available under the MIT license.
