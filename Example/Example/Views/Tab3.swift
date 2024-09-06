@@ -14,7 +14,7 @@ struct Tab3: View {
             AppBar()
             ScrollableTabView(
                 activeBgColor: Color.red,
-                inactiveBgColor: Color.cyan,
+                inactiveBgColor: Color.white,
                 activeColor: Color.white,
                 inActiveColor: Color.black,
                 items:   [
@@ -23,37 +23,37 @@ struct Tab3: View {
                     Text("Test 1")
                 }.padding(.horizontal, 12)
                     .padding(.vertical, 4)
-                , body: Text("Body 1")),
+                , body: Text("Test 1")),
                 TabItem(title: VStack{
                     Image(systemName: "globe")
                     Text("Test 2")
                 }.padding(.horizontal, 12)
                     .padding(.vertical, 4)
-                , body: Text("Body 2")),
+                , body: Text("Test 2")),
                 TabItem(title: VStack{
                     Image(systemName: "globe")
                     Text("Test 3")
                 }.padding(.horizontal, 12)
                     .padding(.vertical, 4)
-                , body: Text("Body 3")),
+                , body: Text("Test 3")),
                 TabItem(title: VStack{
                     Image(systemName: "globe")
                     Text("Test 4")
                 }.padding(.horizontal, 12)
                     .padding(.vertical, 4)
-                , body: Text("Body 4")),
+                , body: Text("Test 4")),
                 TabItem(title: VStack{
                     Image(systemName: "globe")
                     Text("Test 5")
                 }.padding(.horizontal, 12)
                     .padding(.vertical, 4)
-                , body: Text("Body 5")),
+                , body: Text("Test 5")),
                 TabItem(title: VStack{
                     Image(systemName: "globe")
                     Text("Test 6")
                 }.padding(.horizontal, 12)
                     .padding(.vertical, 4)
-                , body: Text("Body 6")),
+                , body: Text("Test 6")),
             ])
         }
     }

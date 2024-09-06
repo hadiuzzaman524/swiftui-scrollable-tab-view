@@ -1,0 +1,15 @@
+{
+  "originHash" : "be3cdfbb4f8a1df050518d118a503d38933dba07ad2787099a014e4c65ac17d6",
+  "pins" : [
+    {
+      "identity" : "swiftui-scrollable-tab-view",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hadiuzzaman524/swiftui-scrollable-tab-view.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "c015e9262531fad3de6ace2169635822b33a6025"
+      }
+    }
+  ],
+  "version" : 3
+}

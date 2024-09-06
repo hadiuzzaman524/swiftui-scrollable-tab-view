@@ -3,15 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		028CCC702C8B606F003AFAFF /* ScrollableTabView in Frameworks */ = {isa = PBXBuildFile; productRef = 028CCC6F2C8B606F003AFAFF /* ScrollableTabView */; };
 		83AFFB882C7888C4007E10D7 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFFB872C7888C4007E10D7 /* ExampleApp.swift */; };
 		83AFFB8A2C7888C4007E10D7 /* Tab1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFFB892C7888C4007E10D7 /* Tab1.swift */; };
 		83AFFB8C2C7888C5007E10D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83AFFB8B2C7888C5007E10D7 /* Assets.xcassets */; };
 		83AFFB8F2C7888C5007E10D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83AFFB8E2C7888C5007E10D7 /* Preview Assets.xcassets */; };
-		83AFFB9C2C788EB6007E10D7 /* ScrollableTabUI in Frameworks */ = {isa = PBXBuildFile; productRef = 83AFFB9B2C788EB6007E10D7 /* ScrollableTabUI */; };
 		83AFFB9E2C7891CF007E10D7 /* Tab2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFFB9D2C7891CF007E10D7 /* Tab2.swift */; };
 		83AFFBA02C789282007E10D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFFB9F2C789282007E10D7 /* ContentView.swift */; };
 		83AFFBA22C789321007E10D7 /* Tab3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFFBA12C789321007E10D7 /* Tab3.swift */; };
@@ -35,13 +35,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83AFFB9C2C788EB6007E10D7 /* ScrollableTabUI in Frameworks */,
+				028CCC702C8B606F003AFAFF /* ScrollableTabView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		028CCC712C8B60DD003AFAFF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83AFFBA32C78AB45007E10D7 /* AppBar.swift */,
+				83AFFB892C7888C4007E10D7 /* Tab1.swift */,
+				83AFFB9D2C7891CF007E10D7 /* Tab2.swift */,
+				83AFFBA12C789321007E10D7 /* Tab3.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		83AFFB7B2C7888C4007E10D7 = {
 			isa = PBXGroup;
 			children = (
@@ -61,12 +72,9 @@
 		83AFFB862C7888C4007E10D7 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				028CCC712C8B60DD003AFAFF /* Views */,
 				83AFFB872C7888C4007E10D7 /* ExampleApp.swift */,
 				83AFFB9F2C789282007E10D7 /* ContentView.swift */,
-				83AFFB9D2C7891CF007E10D7 /* Tab2.swift */,
-				83AFFB892C7888C4007E10D7 /* Tab1.swift */,
-				83AFFBA32C78AB45007E10D7 /* AppBar.swift */,
-				83AFFBA12C789321007E10D7 /* Tab3.swift */,
 				83AFFB8B2C7888C5007E10D7 /* Assets.xcassets */,
 				83AFFB8D2C7888C5007E10D7 /* Preview Content */,
 			);
@@ -98,7 +106,7 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				83AFFB9B2C788EB6007E10D7 /* ScrollableTabUI */,
+				028CCC6F2C8B606F003AFAFF /* ScrollableTabView */,
 			);
 			productName = Example;
 			productReference = 83AFFB842C7888C4007E10D7 /* Example.app */;
@@ -129,7 +137,7 @@
 			);
 			mainGroup = 83AFFB7B2C7888C4007E10D7;
 			packageReferences = (
-				83AFFB9A2C788EB6007E10D7 /* XCLocalSwiftPackageReference "../ScrollableTabView" */,
+				028CCC6E2C8B606F003AFAFF /* XCRemoteSwiftPackageReference "swiftui-scrollable-tab-view" */,
 			);
 			productRefGroup = 83AFFB852C7888C4007E10D7 /* Products */;
 			projectDirPath = "";
@@ -367,17 +375,22 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		83AFFB9A2C788EB6007E10D7 /* XCLocalSwiftPackageReference "../ScrollableTabView" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../ScrollableTabView;
+/* Begin XCRemoteSwiftPackageReference section */
+		028CCC6E2C8B606F003AFAFF /* XCRemoteSwiftPackageReference "swiftui-scrollable-tab-view" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hadiuzzaman524/swiftui-scrollable-tab-view.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		83AFFB9B2C788EB6007E10D7 /* ScrollableTabUI */ = {
+		028CCC6F2C8B606F003AFAFF /* ScrollableTabView */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = ScrollableTabUI;
+			package = 028CCC6E2C8B606F003AFAFF /* XCRemoteSwiftPackageReference "swiftui-scrollable-tab-view" */;
+			productName = ScrollableTabView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

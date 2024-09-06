@@ -12,12 +12,10 @@ struct AppBar: View {
         if(UIDevice.current.userInterfaceIdiom == .phone){
             HStack{
                 Text("Scrollable Tab View")
-                    .font(.title3)
+                    .font(.title)
                 Spacer()
-                Text("⋮").font(.title3)
-                    .fontWeight(.bold)
-                
             }.padding(.horizontal,12)
+            
                 
         }
     }
